@@ -51,5 +51,5 @@ def handle_message_by_id(id):
         db.session.commit()
         return make_response(jsonify({"message": "Message deleted"}), 200)
 
-if __name__ == '_main_':
+if __name__ == '__main__':
     app.run(port=5555)
